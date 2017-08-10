@@ -1,0 +1,14 @@
+{
+  "name": "video-processing",
+  "version": "1.0.0",
+  "description": "Batch process videos - add water mark, crop, and convert to specific format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "wcf": "./index.js"
+  },
+  "author": "Seaborn Lee",
+  "license": "ISC"
+}
