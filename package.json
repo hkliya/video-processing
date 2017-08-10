@@ -1,6 +1,6 @@
 {
   "name": "wcfff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Batch process videos - add water mark, crop, and convert to specific format with ffmpeg.",
   "main": "index.js",
   "scripts": {
