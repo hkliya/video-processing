@@ -8,7 +8,8 @@
   },
   "bin": {
     "wcf": "./index.js",
-    "wcf-init": "./init.js"
+    "wcf-init": "./init.js",
+    "wcf-go": "./go.js"
   },
   "author": "Seaborn Lee",
   "license": "ISC",
