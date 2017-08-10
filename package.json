@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "wcf": "./index.js"
+    "wcf": "./index.js",
+    "wcf-init": "./init.js"
   },
   "author": "Seaborn Lee",
   "license": "ISC",
   "dependencies": {
+    "commander": "^2.11.0",
     "get-video-duration": "^0.2.0",
     "sprintf-js": "^1.1.1"
   }
