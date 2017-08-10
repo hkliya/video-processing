@@ -7,7 +7,8 @@ npm install -g wcf
 ```
 
 ## Dependency
-This command invoke [ffmpeg](https://ffmpeg.org/) to do the true work, so please ensure `ffmpeg` works well on your machine.
+1. This command invoke [ffmpeg](https://ffmpeg.org/) to do the true work, so please ensure `ffmpeg` works well on your machine.
+2. The watermark should be placed as `logo.png` in the working directory.
 
 ## Usage
 ```
