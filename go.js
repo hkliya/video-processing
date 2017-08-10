@@ -3,6 +3,8 @@
 const fs = require("fs");
 const { exec } = require('child_process');
 
+const dstDir = 'Edited';
+
 let readConfig = (fileName) => {
   return fs.readFileSync(fileName).toString().trim().split("\r\n");
 };
@@ -19,7 +21,7 @@ let parse = (config) => {
 let toShellCommands = (configs) => {
   return configs.map(c => {
     let config = parse(c);
-    return `ffmpeg -i "${config.name}" -i logo.png -filter_complex 'overlay=main_w-overlay_w-40:main_h-overlay_h-60' -ss ${config.ss} -to ${config.to} -f mp4 "./Edited/${config.name}"`;
+    return `ffmpeg -i "${config.name}" -i logo.png -filter_complex 'overlay=main_w-overlay_w-40:main_h-overlay_h-60' -ss ${config.ss} -to ${config.to} -f mp4 "./${dstDir}/${config.name}"`;
   });
 }
 
@@ -36,6 +38,13 @@ let execute = (shellCommands) => {
   });
 }
 
+let setup = () => {
+  if (!fs.existsSync(dstDir)) {
+    fs.mkdirSync(dstDir);
+  }
+}
+
+setup()
 let configs = readConfig("config.cfg");
 let shellCommands = toShellCommands(configs);
 execute(shellCommands);
