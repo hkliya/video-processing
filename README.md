@@ -1,9 +1,9 @@
-## wcf
+## wcfff
 Batch `watermark`, `crop` and `format` videos.
 
 ## Install
 ```
-npm install -g wcf
+npm install -g wcfff
 ```
 
 ## Dependency
@@ -12,7 +12,7 @@ npm install -g wcf
 
 ## Usage
 ```
-wcf init
+wcfff init
 ```
 This command will create `config.cfg` which looks like below:
 ```
@@ -27,7 +27,7 @@ This command will create `config.cfg` which looks like below:
 Then you can preview your source videos and open this file to edit the start time at the second column and the end time at the third column.
 Once you satisfied, run this command to invoke `ffmpeg` to do the work:
 ```
-wcf go
+wcfff go
 ```
 
 `Caution`: It should take a while to complete, depends on your hardware and the size of your source files.
