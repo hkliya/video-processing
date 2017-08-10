@@ -1,16 +1,24 @@
 {
-  "name": "wcf",
+  "name": "wcfff",
   "version": "1.0.0",
-  "description": "Batch process videos - add water mark, crop, and convert to specific format.",
+  "description": "Batch process videos - add water mark, crop, and convert to specific format with ffmpeg.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "wcf": "./index.js",
-    "wcf-init": "./init.js",
-    "wcf-go": "./go.js"
+    "wcfff": "./index.js",
+    "wcfff-init": "./init.js",
+    "wcfff-go": "./go.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkliya/wcfff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hkliya/wcfff/issues"
+  },
+  "homepage": "https://github.com/hkliya/wcfff#readme",
   "author": "Seaborn Lee",
   "license": "MIT",
   "dependencies": {
