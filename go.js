@@ -27,7 +27,7 @@ let toShellCommands = (configs) => {
 
 let execute = (shellCommands) => {
   shellCommands.forEach(cmd => {
-    exec(cmd, (err, stdout) => {
+    exec(cmd, {maxBuffer: Infinity}, (err, stdout) => {
       if (err) {
         console.error(err);
         return;
